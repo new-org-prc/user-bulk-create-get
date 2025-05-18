@@ -1,4 +1,4 @@
-# Sika - User Management System
+# User Management System
 
 A user management system built with Go, featuring data import capabilities using WorkerPool cuncurrency pattern and RESTful API endpoint to get user along their addresses.
 
@@ -57,7 +57,11 @@ A user management system built with Go, featuring data import capabilities using
 
 4. Run the application:
    ```bash
-   go run cmd/api/main.go
+   go run cmd/api/main.go --config config.yaml --file data/users_data.json
+
+   #or
+
+   make run
    ```
 
 ## Testing
@@ -141,7 +145,7 @@ database:
    - Add caching layer (Redis)
 
 3. Monitoring and Observability:
-   - Implement structured logging
+   - Implement structured logging using logrus and sentry or loki
 
 4. Security Enhancements:
    - Add authentication
