@@ -1,4 +1,8 @@
-.PHONY: test test-integration test-unit test-handlers setup-test-db
+.PHONY: test test-integration test-unit test-handlers setup-test-db run
+
+# Run the application
+run:
+	go run cmd/api/main.go --config config.yaml --file data/users_data.json
 
 # Start test database
 setup-test-db:
