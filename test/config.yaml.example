@@ -1,0 +1,6 @@
+db:
+  host: "localhost"
+  port: 5433
+  user: "sika_test_user"
+  pass: "sika_test_pass"
+  db_name: "sika_test" 
